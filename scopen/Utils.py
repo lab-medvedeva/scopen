@@ -95,7 +95,7 @@ def get_data_from_10x(input_dir):
     with open(peaks_file) as f:
         for line in f:
             ll = line.strip().split("\t")
-            peaks.append(ll[0] + ":" + ll[1] + "-" + ll[2])
+            peaks.append(ll)
 
     return data, barcodes, peaks
 
